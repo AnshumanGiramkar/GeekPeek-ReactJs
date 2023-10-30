@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# GeekPeek
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GeekPeek is a React.js project that allows users to search for movies and play their trailers. It utilizes The Movie Database (TMDb) API to fetch movie data and trailers. With GeekPeek, you can easily find information about your favorite movies and watch their trailers without leaving the application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Movie Search**: Search for movies by title, keyword, or any other relevant information. Get detailed information about the movies, including the title, release date, overview, and poster.
 
-### `npm start`
+- **Movie Trailers**: Watch trailers of the selected movies. GeekPeek provides an embedded video player for a seamless viewing experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run GeekPeek on your local machine, follow these steps:
 
-### `npm test`
+1. Clone this repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
+   git clone https://github.com/your-username/geekpeek.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   cd geekpeek
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the required dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+4. Obtain an API key from The Movie Database (TMDb) by following their [API documentation](https://developers.themoviedb.org/3/getting-started/introduction).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Create a `.env` file in the project root and add your TMDb API key:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   REACT_APP_TMDB_API_KEY=your-api-key
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+   npm start
+   ```
 
-## Learn More
+7. Open your web browser and access `http://localhost:3000` to use GeekPeek.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. In the search bar at the top, enter the title or keyword related to the movie you want to search for.
 
-### Code Splitting
+2. Click the "Search" button or press Enter to initiate the search.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. The search results will be displayed below, showing movie posters and titles. Click on a movie to see more details.
 
-### Analyzing the Bundle Size
+4. To watch the movie's trailer, click the "Play Trailer" button. The trailer will be displayed in an embedded video player.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used
 
-### Making a Progressive Web App
+- React.js: Front-end framework for building the user interface.
+- The Movie Database (TMDb) API: For fetching movie data and trailers.
+- Axios: For making API requests.
+- Embed API: For embedding YouTube trailers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+- `src/`: Contains the source code for the GeekPeek project.
+  - `components/`: React components used to build the application.
+  - `App.js`: The main application component.
+  - `index.js`: Entry point for the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Troubleshooting
 
-### Deployment
+If you encounter any issues while running GeekPeek, please make sure you have:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Installed the necessary dependencies using `npm install`.
+- Set up your TMDb API key in the `.env` file.
+- Enabled CORS (Cross-Origin Resource Sharing) in your browser, as the application makes API requests.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to help improve GeekPeek.
+
+## Author
+
+Anshuman Giramkar
+
+## Acknowledgments
+
+GeekPeek was created with the help of various online tutorials, resources, and the support of the open-source community. A big thank you to everyone who contributed to the development of this project.
+
+---
+
+Happy movie searching and trailer watching with GeekPeek! 🎬🍿
